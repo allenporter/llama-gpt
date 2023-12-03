@@ -60,6 +60,10 @@ const handler = async (req: Request): Promise<Response> => {
             };
           }
         }
+        return {
+          id: model.id,
+          name: model.id,
+        }
       })
       .filter(Boolean);
 
